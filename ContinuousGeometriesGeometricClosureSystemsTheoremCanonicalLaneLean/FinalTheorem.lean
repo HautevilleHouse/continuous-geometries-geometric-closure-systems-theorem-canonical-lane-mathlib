@@ -1,0 +1,15 @@
+import HautevilleHouse.ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean.AdmissibleClass
+import HautevilleHouse.ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean.BridgeLemmas
+import HautevilleHouse.ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean.GateLemmas
+
+namespace HautevilleHouse
+namespace ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean
+
+def ConstrainedContinuousGeometryClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_continuous_geometry_endgame (A : AdmissibleClass) : ConstrainedContinuousGeometryClosure A :=
+  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean
+end HautevilleHouse

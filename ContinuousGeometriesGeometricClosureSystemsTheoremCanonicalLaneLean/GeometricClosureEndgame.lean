@@ -1,0 +1,11 @@
+import ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean.FinalTheorem
+
+namespace HautevilleHouse
+namespace ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean
+
+theorem geometric_closure_endgame (F : ContinuousGeometriesFoundation) :
+    ConstrainedContinuousGeometriesClosure (F : AdmissibleClass) := by
+  apply constrained_continuous_geometries_endgame
+
+end ContinuousGeometriesGeometricClosureSystemsTheoremCanonicalLaneLean
+end HautevilleHouse
